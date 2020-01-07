@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   test_basic.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anclarma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/03 11:16:26 by anclarma          #+#    #+#             */
-/*   Updated: 2019/12/03 14:52:03 by anclarma         ###   ########.fr       */
+/*   Updated: 2020/01/03 14:17:21 by anclarma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libftprintf.h"
+//#define ft_printf printf
 
 int		main(int ac, char **av)
 {
@@ -95,8 +96,10 @@ int		main(int ac, char **av)
 	printf("%d\n\n", ret);
 
 	printf("test %%n:\n");
+	test = 0;
 	ret2 = ft_printf("il y a 14 char%n soit %d char ", &test, test);
 	ret2 += ft_printf("ou %d char\n", test);
+	test = 0;
 	ret = printf("il y a 14 char%n soit %d char ", &test, test);
 	ret += printf("ou %d char\n", test);
 	printf("%d\n", ret2);
@@ -119,5 +122,17 @@ int		main(int ac, char **av)
 	ret = printf("%e, %e, %e, %e, %e, %e, %e, %e, %e, %e\n", -35.8E+10, 3.4E+38, 3.41E+38, 0.0, 0.1, 3.4E-38, 3.41E-38, 10.0E+50, 9.1E+9999, -9.1E+9999);
 	printf("%d\n", ret2);
 	printf("%d\n\n", ret);
+
+	printf("test %%%%:\n");
+	ret2 = ft_printf("OH MON DIEUX, UN %%!!\n", "bleu");
+	ret = printf("OH MON DIEUX, UN %%!!\n", "bleu");
+	printf("%d\n", ret2);
+	printf("%d\n\n", ret);
+
+	printf("test %%:\n");
+	ret2 = ft_printf("OH MON DIEUX, UN %\n", "bleu");
+    ret = printf("OH MON DIEUX, UN %\n", "bleu");
+    printf("%d\n", ret2);
+    printf("%d\n\n", ret);
 	return (0);
 }
