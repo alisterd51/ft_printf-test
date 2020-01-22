@@ -6,7 +6,7 @@
 /*   By: anclarma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/03 14:18:50 by anclarma          #+#    #+#             */
-/*   Updated: 2020/01/03 17:00:45 by anclarma         ###   ########.fr       */
+/*   Updated: 2020/01/22 11:07:33 by anclarma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int	main(int ac, char **av)
 	printf("Debut des test:\n\n");
 
 	printf("test %%.*s:\n");
-	ret = ft_printf("%.*s, %.*s, %.*s, %.*s, %.*s\n", 1, NULL, 2, "abcd", -2, "abcd", -9, NULL, 5, "z");
-    ret2 = printf("%.*s, %.*s, %.*s, %.*s, %.*s\n", 1, NULL, 2, "abcd", -2, "abcd", -9, NULL, 5, "z");
+	ret = ft_printf("%d: %.*s, %d: %.*s, %d: %.*s, %d: %.*s, %d: %.*s\n", 1, 1, NULL, 2, 2, "abcd", -2, -2, "abcd", -9, -9, NULL, 5, 5, "z");
+    ret2 = printf("%d: %.*s, %d: %.*s, %d: %.*s, %d: %.*s, %d: %.*s\n", 1, 1, NULL, 2, 2, "abcd", -2, -2, "abcd", -9, -9, NULL, 5, 5, "z");
     printf("%d\n%d\n\n", ret, ret2);
 	
 	printf("test %%c:\n");
@@ -43,8 +43,17 @@ int	main(int ac, char **av)
 	printf("%d\n%d\n\n", ret, ret2);
 
 	printf("test %%d:\n");
-	ret = ft_printf("%.0d, %.4d, %.10d, %.10d, %.4d\n", 123, 123, 0, -123, 999999999999);
-    ret2 = printf("%.0d, %.4d, %.10d, %.10d, %.4d\n", 123, 123, 0, -123, 999999999999);
+	ret = ft_printf("%.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d\n", -1, 123, 0, 123, 1, 123, 2, 123, 3, 123, 4, 123, 10, 123, 20, 123, 100, 123, 11, 999999999999);
+    ret2 = printf("%.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d\n", -1, 123, 0, 123, 1, 123, 2, 123, 3, 123, 4, 123, 10, 123, 20, 123, 100, 123, 11, 999999999999);
+	printf("%d\n%d\n\n", ret, ret2);
+	ret = ft_printf("ft_printf: %.12d\n", 1144);
+	ret2 = printf("printf: %.12d\n", 1144);
+	printf("%d\n%d\n\n", ret, ret2);
+	ret = ft_printf("%.--2d, \%.-2d, %.2d, %.-1d, %.0d, %.1d,\n", 0, 0, 0, 0, 0, 0);
+	ret2 = printf("%.--2d, \%.-2d, %.2d, %.-1d, %.0d, %.1d,\n", 0, 0, 0, 0, 0, 0);
+	printf("%d\n%d\n\n", ret, ret2);
+	ret = ft_printf("%.0i\n", 0);
+	ret2 = printf("%.0i\n", 0);
 	printf("%d\n%d\n\n", ret, ret2);
 
 	printf("test %%i:\n");
