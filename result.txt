@@ -1,0 +1,180 @@
+
+[1;32m*****************************************
+[0m[1;32m********* PRINTF - PANDACOUSTIC *********
+[0m[1;32m*****************************************
+[0m
+[1;32m---- BASICS -----------------------------[0m
+
+       test_01             	[32m[OK]
+[0m       test_02             	[31m[SEGV]
+[0m
+
+[1;32m---- CONVERSIONS d-i ------------------[0m
+
+       basic_01            	[32m[OK]
+[0m       basic_02            	[32m[OK]
+[0m       basic_03            	[32m[OK]
+[0m       basic_04            	[32m[OK]
+[0m       basic_05            	[32m[OK]
+[0m       basic_08            	[31m[SEGV]
+[0m       precision_01        	[32m[OK]
+[0m       precision_02        	[31m[SEGV]
+[0m       precision_03        	[31m[SEGV]
+[0m       precision_04        	[32m[OK]
+[0m       precision_05        	[32m[OK]
+[0m       precision_06        	[31m[SEGV]
+[0m       precision_07        	[32m[OK]
+[0m       padding_01          	[32m[OK]
+[0m       padding_02          	[31m[SEGV]
+[0m       padding_03          	[31m[SEGV]
+[0m       padding_04          	[32m[OK]
+[0m       padding_05          	[32m[OK]
+[0m       padding_06          	[32m[OK]
+[0m       padding_07          	[32m[OK]
+[0m       all_01              	[32m[OK]
+[0m       all_02              	[31m[KO]
+[0m       all_03              	[31m[SEGV]
+[0m       all_04              	[31m[SEGV]
+[0m       all_05              	[31m[SEGV]
+[0m       all_06              	[32m[OK]
+[0m
+
+[1;32m---- CONVERSIONS u --------------------[0m
+
+       basic_01            	[31m[SEGV]
+[0m       basic_02            	[31m[SEGV]
+[0m       basic_03            	[31m[SEGV]
+[0m       precision_01        	[31m[SEGV]
+[0m       precision_02        	[31m[SEGV]
+[0m       precision_03        	[31m[SEGV]
+[0m       precision_04        	[31m[SEGV]
+[0m       precision_05        	[31m[SEGV]
+[0m       padding_01          	[31m[SEGV]
+[0m       padding_02          	[31m[SEGV]
+[0m       padding_03          	[31m[SEGV]
+[0m       padding_04          	[31m[SEGV]
+[0m       padding_05          	[31m[SEGV]
+[0m       padding_06          	[31m[SEGV]
+[0m       all_01              	[31m[SEGV]
+[0m       all_02              	[31m[SEGV]
+[0m       all_03              	[31m[SEGV]
+[0m       all_04              	[31m[SEGV]
+[0m
+
+[1;32m---- CONVERSIONS x-X --------------------[0m
+
+       basic_01            	[32m[OK]
+[0m       basic_02            	[32m[OK]
+[0m       basic_03            	[32m[OK]
+[0m       basic_04            	[31m[KO]
+[0m       basic_05            	[31m[KO]
+[0m       precision_01        	[32m[OK]
+[0m       precision_02        	[32m[OK]
+[0m       precision_03        	[32m[OK]
+[0m       precision_04        	[31m[KO]
+[0m       precision_05        	[31m[KO]
+[0m       precision_06        	[32m[OK]
+[0m       precision_07        	[31m[KO]
+[0m       precision_08        	[31m[KO]
+[0m       padding_01          	[32m[OK]
+[0m       padding_02          	[32m[OK]
+[0m       padding_03          	[32m[OK]
+[0m       padding_04          	[31m[KO]
+[0m       padding_05          	[32m[OK]
+[0m       padding_06          	[32m[OK]
+[0m       padding_07          	[32m[OK]
+[0m       all_01              	[31m[KO]
+[0m
+
+[1;32m---- CONVERSION c -----------------------[0m
+
+       basic_01            	[32m[OK]
+[0m       basic_02            	[31m[KO]
+[0m       basic_03            	[32m[OK]
+[0m       basic_04            	[32m[OK]
+[0m       padding_01          	[32m[OK]
+[0m       padding_02          	[32m[OK]
+[0m       padding_03          	[32m[OK]
+[0m       all_01              	[31m[KO]
+[0m
+
+[1;32m---- CONVERSION s -----------------------[0m
+
+       basic_01            	[31m[SEGV]
+[0m       basic_02            	[32m[OK]
+[0m       basic_03            	[32m[OK]
+[0m       precision_01        	[32m[OK]
+[0m       precision_02        	[31m[KO]
+[0m       precision_03        	[31m[KO]
+[0m       precision_04        	[31m[KO]
+[0m       precision_05        	[31m[SEGV]
+[0m       padding_01          	[31m[SEGV]
+[0m       padding_02          	[32m[OK]
+[0m       padding_03          	[32m[OK]
+[0m       padding_04          	[32m[OK]
+[0m       all_01              	[31m[SEGV]
+[0m       all_02              	[31m[SEGV]
+[0m       all_03              	[32m[OK]
+[0m
+
+[1;32m---- CONVERSION p -----------------------[0m
+
+       basic_01            	[31m[SEGV]
+[0m       basic_02            	[31m[SEGV]
+[0m       basic_03            	[31m[SEGV]
+[0m       padding_01          	[31m[SEGV]
+[0m       padding_02          	[31m[SEGV]
+[0m       padding_03          	[31m[SEGV]
+[0m       all_01              	[31m[SEGV]
+[0m
+
+[1;32m---- PERCENT ----------------------------[0m
+
+       basic_01            	[32m[OK]
+[0m       precision_01        	[32m[OK]
+[0m       precision_02        	[32m[OK]
+[0m       precision_03        	[32m[OK]
+[0m       precision_04        	[32m[OK]
+[0m       padding_01          	[31m[KO]
+[0m       padding_02          	[31m[KO]
+[0m       padding_03          	[31m[KO]
+[0m       all_01              	[31m[KO]
+[0m
+
+[1;32m---- ALL MIXED --------------------------[0m
+
+       test_01             	[31m[SEGV]
+[0m       test_02             	[31m[SEGV]
+[0m       test_03             	[31m[SEGV]
+[0m       test_04             	[31m[SEGV]
+[0m       test_05             	[31m[KO]
+[0m
+
+[1;32m*****************************************
+[0m[1;32m**************** RESULT *****************
+[0m[1;32m*****************************************
+[0m
+[31m       [0m[31mBasic tests[0m          [31m1[0m[31m/[0m[31m2[0m
+[31m       [0m[31mConv d-i[0m             [31m16[0m[31m/[0m[31m26[0m
+[31m       [0m[31mConv u[0m               [31m0[0m[31m/[0m[31m18[0m
+[31m       [0m[31mConv x-X[0m             [31m13[0m[31m/[0m[31m21[0m
+[31m       [0m[31mConv c[0m               [31m6[0m[31m/[0m[31m8[0m
+[31m       [0m[31mConv s[0m               [31m7[0m[31m/[0m[31m15[0m
+[31m       [0m[31mConv p[0m               [31m0[0m[31m/[0m[31m7[0m
+[31m       [0m[31mPercent[0m              [31m5[0m[31m/[0m[31m9[0m
+[31m       [0m[31mMixed tests[0m          [31m0[0m[31m/[0m[31m5[0m
+       [1;32m----------------------------
+[0m[31m       [0m[31mTOTAL[0m                [31m48[0m[31m/[0m[31m111[0m
+       [1;32m----------------------------
+[0m[32m
+
+_|_|_|      _|_|    _|      _|  _|_|_|      _|_|      _|_|_|    _|_|    _|    _|    _|_|_|  _|_|_|_|_|  _|_|_|    _|_|_|
+[0m[32m_|    _|  _|    _|  _|_|    _|  _|    _|  _|    _|  _|        _|    _|  _|    _|  _|            _|        _|    _|
+[0m[32m_|    _|  _|    _|  _|_|    _|  _|    _|  _|    _|  _|        _|    _|  _|    _|  _|            _|        _|    _|
+[0m[32m_|_|_|    _|_|_|_|  _|  _|  _|  _|    _|  _|_|_|_|  _|        _|    _|  _|    _|    _|_|        _|        _|    _|
+[0m[32m_|        _|    _|  _|    _|_|  _|    _|  _|    _|  _|        _|    _|  _|    _|        _|      _|        _|    _|
+[0m[32m_|        _|    _|  _|      _|  _|_|_|    _|    _|    _|_|_|    _|_|      _|_|    _|_|_|        _|      _|_|_|    _|_|_|
+[0m[32m
+
+Good luck. ¯\_(ツ)_/¯
+[0m
